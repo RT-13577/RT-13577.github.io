@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="En">
+<head>
+    <title>Happy Anniversary!</title>
+    <style>
+h1 {
+	text-align:center;
+	color:black;
+	font-family:sans-serif; 
+	font-size:50px;
+}
+
+p {
+    font-size:10px;
+    font-family:Arial;
+    color:black;
+    text-align:end;
+}
+
+.round {
+	border:2px solid;
+	border-color:rgb(167, 17, 1);
+	border-radius:12px;
+	padding:5px;
+	background-color:rgb(167, 17, 1);
+}
+
+.bioImg {
+	border-radius:10px;
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+	margin-bottom:20px;
+	margin-top:20px;
+	
+}
+.bioImg:hover {
+	box-shadow:10px 10px 10px #fa1f1f; 
+	transition:1s;
+}
+
+.bioImg {
+	border-radius:10px;
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+	margin-bottom:20px;
+	margin-top:20px;
+	
+}
+.bioImg:hover {
+	box-shadow:10px 10px 10px #fa1f1f; 
+	transition:1s;
+}
+
+.hero {
+    width:100%;
+    height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.btn{
+    display:inline-block;
+    font-size:18px;
+    padding:24px 70px;
+    background:#ff1876;
+    color:#fff;
+    border-radius:40px;
+    border:none;
+    outline:none;
+    cursor:pointer;
+    position:relative;
+    box-shadow:0 2px 25px rgba(255, 0, 130, 0.5);
+    transition:box-shadow 0.25s;
+    z-index:2;
+}
+
+.btn:active{
+    background:#d80972;
+    box-shadow:0 2px 25px rgba(255,0,130,0.2);
+}
+
+.btn span{
+    background:#ff1876;
+    border:1px solid #ff1876;
+    width:14px;
+    height:14px;
+    border-radius:50%;
+    position:absolute;
+    top:10px;
+    left:10px;
+    z-index:-1;
+}
+
+.btn span:nth-child(1){
+    top:-20%;
+    left:-10%;
+}
+
+.btn span:nth-child(2){
+    top:-130%;
+    left:0%;
+}
+
+.btn span:nth-child(3){
+    top:-50%;
+    left:10%;
+    background:transparent;
+}
+
+.btn span:nth-child(4){
+    top:-66%;
+    left:20%;
+}
+
+.btn span:nth-child(5){
+    top:-90%;
+    left:28%;
+}
+
+.btn span:nth-child(6){
+    top:-70%;
+    left:42%;
+}
+
+.btn span:nth-child(7){
+    top:-80%;
+    left:60%;
+    background:transparent;
+}
+
+.btn span:nth-child(8){
+    top:-50%;
+    left:70%;
+}
+
+.btn span:nth-child(9){
+    top:-120%;
+    left:80%;
+}
+
+.btn span:nth-child(10){
+    top:-70%;
+    left:90%;
+}
+
+.btn span:nth-child(11){
+    top:-80%;
+    left:100%;
+    background:transparent;
+}
+
+.btn span:nth-child(12){
+    top:-50%;
+    left:110%;
+}
+
+.btn span:nth-child(13){
+    top:40%;
+    left:-20%;
+}
+
+.btn span:nth-child(14){
+    top:60%;
+    left:120%;
+    background:transparent;
+}
+
+.btn span:nth-child(15){
+    top:160%;
+    left:-10%;
+}
+
+.btn span:nth-child(16){
+    top:120%;
+    left:5%;
+    background:transparent;
+}
+
+.btn span:nth-child(17){
+    top:180%;
+    left:10%;
+}
+
+.btn span:nth-child(18){
+    top:130%;
+    left:20%;
+}
+
+.btn span:nth-child(19){
+    top:180%;
+    left:33%;
+    background:transparent;
+}
+
+.btn span:nth-child(20){
+    top:180%;
+    left:55%;
+}
+.btn span:nth-child(21){
+    top:160%;
+    left:75%;
+}
+.btn span:nth-child(22){
+    top:130%;
+    left:88%;
+    background:transparent;
+}
+.btn span:nth-child(23){
+    top:140%;
+    left:100%;
+}
+
+.btn span:nth-child(24){
+    top:190%;
+    left:120%;
+}
+
+.anim{
+    animation:moving 0.5s linear reverse forwards;
+}
+
+@keyframes moving{
+    0%{
+        transform:scale(0);
+    }
+    10%{
+        transform:scale(1);
+    }
+    100%{
+        top:50%;
+        left:50%;
+    }
+}
+
+    </style>
+    </head>
+    <body>
+        <h1 class="round">
+            Happy Anniversary Mama and Papa!
+        </h1>
+        <img src="il_570xN.3601781047_1gt9.jpeg" alt="Rudra's Image" class="bioImg" style="height:300px;text-align:center">
+        <div class="hero">
+        <button class="btn" id="btn">Click Here!
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+
+        </button>
+        </div>
+        <script>
+            let btn = document.getElementById("btn");
+            let spans = document.getElementsByTagName("span");
+
+        btn.onclick = function(){
+            for(span of spans){
+            span.classList.add("anim")
+        }
+        setTimeout(function(){
+            for(span of spans){
+            span.classList.remove("anim")
+        }
+        },500)
+    }
+        </script>
+        <p>By:Rudra</p>
+    </body>
